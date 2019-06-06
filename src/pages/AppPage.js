@@ -1,28 +1,27 @@
-import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
-
+import React, { Component } from 'react';
 import { BaseComponent } from "my-utils/core"
-import { AppConfig } from "my-constants"
-import { RenderRoutes } from 'my-routes';
 
-class AppPage extends BaseComponent {
-	testA = _ => {
-		return false
+import { MainLayout, AuthenticationLayout } from './layouts'
+
+const RenderComponent = () => {
+	const jwt_token = localStorage.getItem('jwt-token');
+	let component = null;
+
+	if (!jwt_token) {
+		component = ( <AuthenticationLayout /> );
+	} else {
+		component = ( <MainLayout /> );
 	}
 
+	return component;
+}
+
+class AppPage extends BaseComponent {
 	render() {
-		
 		return (
-			<Router>
-				<RenderRoutes />
-				<div className="App">
-					<button type="button" onClick={this.testA}> Click </button>
-					<header className="App-header">
-						<h1>Hello World, {AppConfig.API_SERVER}</h1>
-					</header>
-				</div>
-			</Router>
+			<RenderComponent />
 		);
 	}
 }
-export default AppPage
+
+export default AppPage;

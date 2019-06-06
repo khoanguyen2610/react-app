@@ -2,27 +2,35 @@ import { find, forEach } from "lodash";
 
 const listAdminRoutes = [
     /*==========================================================================*/
-    { name: "AUTH", path: "/auth", language: "en"},
+    { name: "AUTH_LOGIN", path: "/auth/login", language: "en"},
+    /*==========================================================================*/
+    { name: "MAINPAGE", path: "/", language: "en"},
     /*==========================================================================*/
     { name: "DASHBOARD", path: "/dashboard", language: "en"},
+    
     /*==========================================================================*/
-    { name: "ACCOUNTANT", path: "/accountant", language: "en"},
+    { name: "ACCOUNTANT_DASHBOARD", path: "/accountant", language: "en"},
     /*==========================================================================*/
-    { name: "ACCOUNTANT_MANUAL", path: "/accountant_manual", language: "en"},
+    { name: "ACCOUNTANT_LIST", path: "/accountant/list", language: "en"},
     /*==========================================================================*/
-    { name: "REPORT_DETAIL", path: "/report_detail", language: "en"},
+    { name: "ACCOUNTANT_MANUAL", path: "/accountant/manual", language: "en"},
     /*==========================================================================*/
-    { name: "CONFIGURATION", path: "/configuration", language: "en"},
+    { name: "ACCOUNTANT_REPORT", path: "/accountant/report", language: "en"},
+
     /*==========================================================================*/
-    { name: "FORMULA", path: "/formula", language: "en"},
+    { name: "MANAGE_DASHBOARD", path: "/manage", language: "en"},
     /*==========================================================================*/
-    { name: "FORMULA_GROUP", path: "/formula_group", language: "en"},
+    { name: "CONFIGURATION", path: "/manage/configuration", language: "en"},
     /*==========================================================================*/
-    { name: "MEMBER", path: "/member", language: "en"},
+    { name: "FORMULA", path: "/manage/formula", language: "en"},
     /*==========================================================================*/
-    { name: "ACCOUNT", path: "/account", language: "en"},
+    { name: "FORMULA_GROUP", path: "/manage/formula_group", language: "en"},
     /*==========================================================================*/
-    { name: "ACCOUNT_SUB", path: "/account-sub", language: "en"},
+    { name: "MEMBER", path: "/manage/member", language: "en"},
+    /*==========================================================================*/
+    { name: "ACCOUNT", path: "/manage/account", language: "en"},
+    /*==========================================================================*/
+    { name: "ACCOUNT_SUB", path: "/manage/account-sub", language: "en"},
     /*==========================================================================*/
 ]
 

@@ -89,9 +89,9 @@ export const renderCheckbox = ({ input, label }) => (
 
 export const renderRadioGroup = ({
     input,
-    ...rest,
     children,
     meta: { touched, error },
+    ...rest,
 }) => {
     return (
         <div>

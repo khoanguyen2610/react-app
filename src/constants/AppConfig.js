@@ -8,8 +8,7 @@ export const DEBUG_ENABLED = true;
 | Define API Variable Enviroment
 |--------------------------------------------------------------------------
 */
-export const API_SERVER = "localhost";
-export const API_URL = API_SERVER + "/public/api";
+export const API_URL = "http://124.248.229.43:3013/";
 export const API_AUTH_USER = "halfdefense";
 export const API_AUTH_PASS = "$jSZ9y})haSLp>LB";
 
