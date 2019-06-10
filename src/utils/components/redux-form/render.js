@@ -10,7 +10,7 @@ import {
     FormControlLabel
 } from '@material-ui/core';
 
-import TinyMCE from 'my-utils/components/editor/TinyMCE';
+// import TinyMCE from 'my-utils/components/editor/TinyMCE';
 
 const styles = {
     noLabel: {
@@ -117,24 +117,24 @@ export const renderRadioGroup = ({
 };
 
 // tinymce editor
-export const renderEditor = ({
-    input,
-    meta: { touched, error },
-    children,
-    ...custom
-}) => (
-    <div>
-        <TinyMCE
-            {...input}
-            content={input.value}
-            // initialValues={input.value}
-            onChange={(e) =>  input.onChange(e)}
-            children={children}
-            {...custom}
-        />
-        {
-            touched &&
-            ((error && <span className="error" >{error}</span>))
-        }
-    </div>
-);
+// export const renderEditor = ({
+//     input,
+//     meta: { touched, error },
+//     children,
+//     ...custom
+// }) => (
+//     <div>
+//         <TinyMCE
+//             {...input}
+//             content={input.value}
+//             // initialValues={input.value}
+//             onChange={(e) =>  input.onChange(e)}
+//             children={children}
+//             {...custom}
+//         />
+//         {
+//             touched &&
+//             ((error && <span className="error" >{error}</span>))
+//         }
+//     </div>
+// );

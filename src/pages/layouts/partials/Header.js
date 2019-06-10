@@ -123,8 +123,7 @@ class Header extends Component {
                                     </a>
                                     <ul className="dropdown-menu">
                                         <li className="external">
-                                            <h3>You have
-                    <span className="bold">7 New</span> Messages</h3>
+                                            <h3>You have <span className="bold">7 New</span> Messages</h3>
                                             <a href="app_inbox.html">view all</a>
                                         </li>
                                         <li>
@@ -195,8 +194,7 @@ class Header extends Component {
                                     </a>
                                     <ul className="dropdown-menu extended tasks">
                                         <li className="external">
-                                            <h3>You have
-                    <span className="bold">12 pending</span> tasks</h3>
+                                            <h3>You have <span className="bold">12 pending</span> tasks</h3>
                                             <a href="app_todo.html">view all</a>
                                         </li>
                                         <li>
@@ -314,13 +312,13 @@ class Header extends Component {
                                         <li>
                                             <a href="app_inbox.html">
                                                 <i className="icon-envelope-open" /> My Inbox
-                    <span className="badge badge-danger"> 3 </span>
+                                                <span className="badge badge-danger"> 3 </span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="app_todo.html">
                                                 <i className="icon-rocket" /> My Tasks
-                    <span className="badge badge-success"> 7 </span>
+                                                <span className="badge badge-success"> 7 </span>
                                             </a>
                                         </li>
                                         <li className="divider"> </li>

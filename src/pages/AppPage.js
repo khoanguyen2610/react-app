@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { BaseComponent } from "my-utils/core"
+import React from 'react';
 
+import { BaseComponent } from "my-utils/core"
 import { MainLayout, AuthenticationLayout } from './layouts'
 
 const RenderComponent = () => {

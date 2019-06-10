@@ -6,7 +6,7 @@ import { RadioButton, RadioButtonGroup } from 'material-ui/RadioButton';
 import Checkbox from 'material-ui/Checkbox';
 import SelectField from 'material-ui/Select';
 import MenuItem from 'material-ui/MenuItem';
-import TinyMCE from 'my-utils/components/editor/TinyMCE';
+// import TinyMCE from 'my-utils/components/editor/TinyMCE';
 
 export const renderTextField = ({
     input,
@@ -67,25 +67,25 @@ export const renderSelectField = ({
     />
 );
 
-// tinymce editor
-export const renderEditor = ({
-    input,
-    meta: { touched, error },
-    children,
-    ...custom
-}) => (
-    <div>
-        <TinyMCE
-            {...input}
-            content={input.value}
-            // initialValues={input.value}
-            onChange={(e) =>  input.onChange(e)}
-            children={children}
-            {...custom}
-        />
-        {
-            touched &&
-            ((error && <span className="error" >{error}</span>))
-        }
-    </div>
-);
+// // tinymce editor
+// export const renderEditor = ({
+//     input,
+//     meta: { touched, error },
+//     children,
+//     ...custom
+// }) => (
+//     <div>
+//         <TinyMCE
+//             {...input}
+//             content={input.value}
+//             // initialValues={input.value}
+//             onChange={(e) =>  input.onChange(e)}
+//             children={children}
+//             {...custom}
+//         />
+//         {
+//             touched &&
+//             ((error && <span className="error" >{error}</span>))
+//         }
+//     </div>
+// );

@@ -5,8 +5,7 @@ import { Header, Breadcrumb, MainNavigation, Footer } from 'my-pages/layouts/par
 import RenderRoutes from 'my-routes/RenderRoutes';
 
 
-class MainLayout extends Component
-{
+class MainLayout extends Component {
     render() {
         return (
 			<section>
