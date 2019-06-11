@@ -14,7 +14,7 @@ class Header extends Component {
                                 <span />
                             </div>
                         </div>
-                        <a className="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                        <a href="index.html" className="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
                             <span />
                         </a>
                         <div className="top-menu">

@@ -7,7 +7,7 @@ import thunk from 'redux-thunk';
 
 import appReducers from 'my-reducers/index';
 import AppPage from 'my-pages/AppPage';
-import './i18n';
+import 'my-utils/i18n';
 import * as serviceWorker from './serviceWorker';
 
 

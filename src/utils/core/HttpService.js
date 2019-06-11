@@ -1,7 +1,8 @@
 import axios from 'axios';
 import { isEmpty } from 'lodash';
+import qs from 'qs'
 
-import { AppConfig } from 'my-constants';
+import { Helpers } from 'my-utils'
 
 class HttpService {
     constructor() {
@@ -9,7 +10,7 @@ class HttpService {
             withCredentials: false, //reject authen token
             headers: {
                 'Accept': 'application/json',
-                'Content-Type': 'application/json;charset=UTF-8'
+                'Content-Type': 'application/x-www-form-urlencoded'
             }
         }
         //Inital Service
@@ -46,7 +47,10 @@ class HttpService {
         if(isEmpty(cancelToken)){
             cancelToken = this.getCancelToken();
         }
-        return this.service.post(path, payload, { cancelToken: cancelToken });
+
+        //Convert Object to form data
+        // payload = this.obj2fd(payload)
+        return this.service.post(path, qs.stringify(payload), { cancelToken: cancelToken });
     }
 
     //Create request with method put
@@ -73,24 +77,37 @@ class HttpService {
 
     //Set JWT Token
     setAuthorization = () => {
-        this.service.defaults.headers.common['Authorization'] = 'Basic ' + btoa(`${AppConfig.API_AUTH_USER}:${AppConfig.API_AUTH_PASS}`);
+        // this.service.defaults.headers.common['Authorization'] = 'Basic ' + btoa(`${AppConfig.API_AUTH_USER}:${AppConfig.API_AUTH_PASS}`);
     }
 
     //Handle berfore send request
     handleRequest = config => {
+        console.log('test')
+        Helpers.showLoading();
         return config;
     }
-
+        
     //Handle when request sucessful
     handleSuccess = response => {
         //obj response : data, status, statusText, headers
         const { data } = response;
+        Helpers.hideLoading();
         return data;
     }
 
     //Handle when request fail
     handleError = error => {
+        Helpers.hideLoading();
         return Promise.reject(error);
+    }
+
+    //Convert object to form data
+    obj2fd = obj => {
+        let fd = new FormData()
+        for(let x in obj) {
+            fd.append(x, obj[x])
+        }
+        return fd
     }
 }
 

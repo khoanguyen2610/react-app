@@ -11,24 +11,24 @@ export default class QuickAtivitiesContainer extends Component {
                     </div>
                 </div>
                 <div className="portlet-body">
-                    <a href="javascript:;" className="icon-btn">
+                    <a href="index.html" className="icon-btn">
                         <i className="fa fa-plus" />
                         <div> Add more </div>
                     </a>
-                    <a href="javascript:;" className="icon-btn">
+                    <a href="index.html" className="icon-btn">
                         <i className="fa fa-list" />
                         <div> Report </div>
                     </a>
-                    <a href="javascript:;" className="icon-btn">
+                    <a href="index.html" className="icon-btn">
                         <i className="fa fa-usd" />
                         <div> Win / Lose </div>
                     </a>
-                    <a href="javascript:;" className="icon-btn">
+                    <a href="index.html" className="icon-btn">
                         <i className="fa fa-server" />
                         <div> Outstanding </div>
                         <span className="badge badge-success"> 4 </span>
                     </a>
-                    <a href="javascript:;" className="icon-btn">
+                    <a href="index.html" className="icon-btn">
                         <i className="fa fa-calculator" />
                         <div> Accountant </div>
                         <span className="badge badge-info"> 12 </span>

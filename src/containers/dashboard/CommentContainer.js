@@ -26,7 +26,7 @@ export default class CommentContainer extends Component {
                                 <div className="mt-comments">
                                     <div className="mt-comment">
                                         <div className="mt-comment-img">
-                                            <img src="../assets/pages/media/users/avatar1.jpg" /> </div>
+                                            <img alt="vw3" src="assets/pages/media/users/avatar1.jpg" /> </div>
                                         <div className="mt-comment-body">
                                             <div className="mt-comment-info">
                                                 <span className="mt-comment-author">Michael Baker</span>
@@ -37,13 +37,13 @@ export default class CommentContainer extends Component {
                                                 <span className="mt-comment-status mt-comment-status-pending">Pending</span>
                                                 <ul className="mt-comment-actions">
                                                     <li>
-                                                        <a href="#">Quick Edit</a>
+                                                        <a href="index.html">Quick Edit</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">View</a>
+                                                        <a href="index.html">View</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">Delete</a>
+                                                        <a href="index.html">Delete</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -51,7 +51,7 @@ export default class CommentContainer extends Component {
                                     </div>
                                     <div className="mt-comment">
                                         <div className="mt-comment-img">
-                                            <img src="../assets/pages/media/users/avatar6.jpg" /> </div>
+                                            <img alt="vw3" src="assets/pages/media/users/avatar6.jpg" /> </div>
                                         <div className="mt-comment-body">
                                             <div className="mt-comment-info">
                                                 <span className="mt-comment-author">Larisa Maskalyova</span>
@@ -62,13 +62,13 @@ export default class CommentContainer extends Component {
                                                 <span className="mt-comment-status mt-comment-status-rejected">Rejected</span>
                                                 <ul className="mt-comment-actions">
                                                     <li>
-                                                        <a href="#">Quick Edit</a>
+                                                        <a href="index.html">Quick Edit</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">View</a>
+                                                        <a href="index.html">View</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">Delete</a>
+                                                        <a href="index.html">Delete</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -76,7 +76,7 @@ export default class CommentContainer extends Component {
                                     </div>
                                     <div className="mt-comment">
                                         <div className="mt-comment-img">
-                                            <img src="../assets/pages/media/users/avatar8.jpg" /> </div>
+                                            <img alt="vw3" src="assets/pages/media/users/avatar8.jpg" /> </div>
                                         <div className="mt-comment-body">
                                             <div className="mt-comment-info">
                                                 <span className="mt-comment-author">Natasha Kim</span>
@@ -87,13 +87,13 @@ export default class CommentContainer extends Component {
                                                 <span className="mt-comment-status mt-comment-status-pending">Pending</span>
                                                 <ul className="mt-comment-actions">
                                                     <li>
-                                                        <a href="#">Quick Edit</a>
+                                                        <a href="index.html">Quick Edit</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">View</a>
+                                                        <a href="index.html">View</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">Delete</a>
+                                                        <a href="index.html">Delete</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -101,7 +101,7 @@ export default class CommentContainer extends Component {
                                     </div>
                                     <div className="mt-comment">
                                         <div className="mt-comment-img">
-                                            <img src="../assets/pages/media/users/avatar4.jpg" /> </div>
+                                            <img alt="vw3" src="assets/pages/media/users/avatar4.jpg" /> </div>
                                         <div className="mt-comment-body">
                                             <div className="mt-comment-info">
                                                 <span className="mt-comment-author">Sebastian Davidson</span>
@@ -112,13 +112,13 @@ export default class CommentContainer extends Component {
                                                 <span className="mt-comment-status mt-comment-status-rejected">Rejected</span>
                                                 <ul className="mt-comment-actions">
                                                     <li>
-                                                        <a href="#">Quick Edit</a>
+                                                        <a href="index.html">Quick Edit</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">View</a>
+                                                        <a href="index.html">View</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">Delete</a>
+                                                        <a href="index.html">Delete</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -132,7 +132,7 @@ export default class CommentContainer extends Component {
                                 <div className="mt-comments">
                                     <div className="mt-comment">
                                         <div className="mt-comment-img">
-                                            <img src="../assets/pages/media/users/avatar4.jpg" /> </div>
+                                            <img alt="vw3" src="assets/pages/media/users/avatar4.jpg" /> </div>
                                         <div className="mt-comment-body">
                                             <div className="mt-comment-info">
                                                 <span className="mt-comment-author">Michael Baker</span>
@@ -143,13 +143,13 @@ export default class CommentContainer extends Component {
                                                 <span className="mt-comment-status mt-comment-status-approved">Approved</span>
                                                 <ul className="mt-comment-actions">
                                                     <li>
-                                                        <a href="#">Quick Edit</a>
+                                                        <a href="index.html">Quick Edit</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">View</a>
+                                                        <a href="index.html">View</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">Delete</a>
+                                                        <a href="index.html">Delete</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -157,7 +157,7 @@ export default class CommentContainer extends Component {
                                     </div>
                                     <div className="mt-comment">
                                         <div className="mt-comment-img">
-                                            <img src="../assets/pages/media/users/avatar8.jpg" /> </div>
+                                            <img alt="vw3" src="assets/pages/media/users/avatar8.jpg" /> </div>
                                         <div className="mt-comment-body">
                                             <div className="mt-comment-info">
                                                 <span className="mt-comment-author">Larisa Maskalyova</span>
@@ -168,13 +168,13 @@ export default class CommentContainer extends Component {
                                                 <span className="mt-comment-status mt-comment-status-approved">Approved</span>
                                                 <ul className="mt-comment-actions">
                                                     <li>
-                                                        <a href="#">Quick Edit</a>
+                                                        <a href="index.html">Quick Edit</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">View</a>
+                                                        <a href="index.html">View</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">Delete</a>
+                                                        <a href="index.html">Delete</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -182,7 +182,7 @@ export default class CommentContainer extends Component {
                                     </div>
                                     <div className="mt-comment">
                                         <div className="mt-comment-img">
-                                            <img src="../assets/pages/media/users/avatar6.jpg" /> </div>
+                                            <img alt="vw3" src="assets/pages/media/users/avatar6.jpg" /> </div>
                                         <div className="mt-comment-body">
                                             <div className="mt-comment-info">
                                                 <span className="mt-comment-author">Natasha Kim</span>
@@ -193,13 +193,13 @@ export default class CommentContainer extends Component {
                                                 <span className="mt-comment-status mt-comment-status-approved">Approved</span>
                                                 <ul className="mt-comment-actions">
                                                     <li>
-                                                        <a href="#">Quick Edit</a>
+                                                        <a href="index.html">Quick Edit</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">View</a>
+                                                        <a href="index.html">View</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">Delete</a>
+                                                        <a href="index.html">Delete</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -207,7 +207,7 @@ export default class CommentContainer extends Component {
                                     </div>
                                     <div className="mt-comment">
                                         <div className="mt-comment-img">
-                                            <img src="../assets/pages/media/users/avatar1.jpg" /> </div>
+                                            <img alt="vw3" src="assets/pages/media/users/avatar1.jpg" /> </div>
                                         <div className="mt-comment-body">
                                             <div className="mt-comment-info">
                                                 <span className="mt-comment-author">Sebastian Davidson</span>
@@ -218,13 +218,13 @@ export default class CommentContainer extends Component {
                                                 <span className="mt-comment-status mt-comment-status-approved">Approved</span>
                                                 <ul className="mt-comment-actions">
                                                     <li>
-                                                        <a href="#">Quick Edit</a>
+                                                        <a href="index.html">Quick Edit</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">View</a>
+                                                        <a href="index.html">View</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">Delete</a>
+                                                        <a href="index.html">Delete</a>
                                                     </li>
                                                 </ul>
                                             </div>

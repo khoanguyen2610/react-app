@@ -1,27 +1,39 @@
 import React from 'react';
+import Cookies from 'universal-cookie';
+import { connect } from 'react-redux';
 
 import { BaseComponent } from "my-utils/core"
-import { MainLayout, AuthenticationLayout } from './layouts'
+import { MainLayout, AuthenticationLayout } from 'my-pages/layouts'
+import { Loading } from 'my-pages/layouts/partials';
+
+
+const cookies = new Cookies();
 
 const RenderComponent = () => {
-	const jwt_token = localStorage.getItem('jwt-token');
-	let component = null;
+	let component = ( <MainLayout /> );
 
-	if (!jwt_token) {
+	// Check user is login? change template
+	const isLogin = cookies.get("isLogin");
+	if (!isLogin) {
 		component = ( <AuthenticationLayout /> );
-	} else {
-		component = ( <MainLayout /> );
 	}
-
+	
 	return component;
 }
 
 class AppPage extends BaseComponent {
 	render() {
 		return (
-			<RenderComponent />
+			<section>
+				<RenderComponent />
+				<Loading />
+			</section>
 		);
 	}
 }
 
-export default AppPage;
+const mapStateToProps = state => ({
+    auth : state.AuthReducer
+})
+
+export default connect(mapStateToProps,null)(AppPage);

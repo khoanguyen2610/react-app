@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-import FormLogin from 'my-components/auth/FormLogin'
+import { FormLoginContainer } from 'my-containers/auth'
 
 class LoginPage extends Component {
     render() {
         return (
-            <FormLogin />
+            <FormLoginContainer />
         );
     }
 }
